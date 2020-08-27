@@ -1,38 +1,141 @@
 .App {
+  width: 100vw;
+}
+body {
+  background:  #f5f5f5;
+}
+.card_wrapper {
+  margin: 0px;
+  padding: 10px;;
+  width: 250px;
+  border: 2px solid #f5f5f5;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.product_image img {
+  width: 220px;
+  height: 220px;
+}
+.addCart_btn {
+  width: 100%;
+  padding: 10px;
+  color: #FF69B4;
+  font-size: 13px;
+  border: 1px solid #FF69B4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.addCart_btn:hover {
+  background-color: #FF1493;
+  color: #fff;
+}
+.productlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:60px;
+  max-width: 900px;
+  margin: auto;
+}
+p {
+  text-align: left;
+}
+
+.sidebar_wrapper {
+  position: absolute;
+  padding: 20px;
+  height: 800px;
+  top: 0;
+  right: 0;
+  width: 0px;
+  color: #f5f5f5;
+  background: rgb(49, 48, 48);
+}
+
+
+.total_count {
+  position: absolute;
+  border-radius: 50%;
+  background: #FF1493;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 25px;
+  padding: 2px;
+  margin-top: 35px;
+  margin-left: 27px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.top {
+  position: relative;
+  margin-left:150px;
+  display: flex;
+}
+.title {
+ margin:10px 0px 0px 9px;
+}
+.added_product {
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+.plusminus_btn {
+  margin-top: 15px;
+  width:20px;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.cost {
+  color: darkgoldenrod;
+}
+.quantity {
+  padding: 0 5px;
+  border-radius: 3px;
+  background: #FF1493;
+}
+.checkout_btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  background: black;
+  padding: 10px;
+  cursor: pointer;
+}
+.product_pic img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+.close_popup {
+  position: absolute;
+  background:  rgb(49, 48, 48);
+  color: #ffffff;
+  width: 40px;
+  height: 45px;
+  font-size: 15px;
+  top: 0;
+  margin-left: -60px;
+  border: none;
+  cursor: pointer;
+}
+.cart {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  right: 0;
+  background: black;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smooth-transition{
+  transition: all 400ms ease-in-out;
+  min-width: 400px;
+}
+.app_title {
+  text-align: center;
+  margin: 15px;
 }
